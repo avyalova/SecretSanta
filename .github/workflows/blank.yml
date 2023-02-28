@@ -33,5 +33,5 @@ jobs:
       - name: Run a multi-line script
         run: |
          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
-         postman login --with-api-key PMAK-63fd24343bbe6f1f1d428d27-7bfc50e8808b3732c5703523812188471e
+         postman login --with-api-key ${API_KEY}}
          postman collection run "postman/collections/SecretSantaBox.json" -e "Vyalova.postman_environment.json"
